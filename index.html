@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+
+    <link rel="stylesheet" href="assets/css/components/navbar.css" />
+    <link rel="stylesheet" href="assets/css/components/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/components/button.css" />
+
+    <link rel="stylesheet" href="assets/css/pages/index.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.umd.js"
+      integrity="sha512-gQhCDsnnnUfaRzD8k1L5llCCV6O9HN09zClIzzeJ8OJ9MpGmIlCxm+pdCkqTwqJ4JcjbojFr79rl2F1mzcoLMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Desafio API</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div>
+          <h3>Conversor de monedas</h3>
+          <div>
+            <h4>Pesos CLP</h4>
+            <input
+              id="inputClp"
+              type="number"
+              placeholder="Ingrese el monto en CLP"
+            />
+          </div>
+          <div>
+            <h5>Moneda a convertir:</h5>
+            <select id="inputCurrencies">
+              <option value="dolar">Dolar</option>
+              <option value="euro">Euro</option>
+            </select>
+            <button id="btnSearch">Buscar</button>
+          </div>
+          <h4>Resultado $<span id="conversionResult">0</span></h4>
+          <p id="errorDisplay"></p>
+        </div>
+        <div>
+          <canvas id="graphLastDays"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
